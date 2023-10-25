@@ -56,6 +56,8 @@ main .sidebar li {
 .dr-main-right {
     background-color: red;
     margin-top: 70px;
+    overflow-y: auto;
+    height: calc(100vh - 70px);
 }
 
 /* top-bar */
