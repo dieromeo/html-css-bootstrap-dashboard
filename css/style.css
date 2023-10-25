@@ -54,7 +54,6 @@ main .sidebar li {
 }
 
 .dr-main-right {
-    background-color: red;
     margin-top: 70px;
     overflow-y: auto;
     height: calc(100vh - 70px);
@@ -84,6 +83,19 @@ main .sidebar li {
 
 .dr-top-bar .col-12 {
     margin-bottom: 20px;
+}
+
+main .dr-main-bottom table img {
+    width: 30px;
+    margin-right: 12px;
+}
+
+main .dr-main-bottom table {
+    font-size: 13px;
+}
+
+main .dr-main-bottom table button {
+    font-size: .8125rem
 }
 
 @media screen and (max-width:768px) {
