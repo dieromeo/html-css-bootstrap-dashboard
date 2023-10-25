@@ -1,6 +1,7 @@
 /* import */
 
 @import url('_partials/common.css');
+@import url('_partials/component.css');
 
 /* header */
 
@@ -52,8 +53,45 @@ main .sidebar li {
     padding-bottom: 22px;
 }
 
+.dr-main-right {
+    background-color: red;
+    margin-top: 70px;
+}
+
+/* top-bar */
+
+.dr-top-bar {
+    padding-top: 25px;
+}
+
+.dr-top-bar .dr-add {
+    margin-right: 20px;
+}
+
+.dr-main-right .offcanvas {
+    width: 100%;
+}
+
+.dr-badge-bg-opacity {
+    font-size: .75rem;
+}
+
+.dr-top-bar .fa-angles-right {
+    font-size: .75rem;
+}
+
+.dr-top-bar .col-12 {
+    margin-bottom: 20px;
+}
+
 @media screen and (max-width:768px) {
     main .sidebar {
         width: fit-content;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .dr-main-right .offcanvas {
+        width: 40%;
     }
 }
