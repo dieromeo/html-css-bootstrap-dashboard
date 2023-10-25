@@ -10,6 +10,7 @@ header {
     left: 0;
     right: 0;
     padding: 0 12px;
+    z-index: 99;
 }
 
 #small-logo {
@@ -32,4 +33,27 @@ header .dropdown-toggle {
 
 header .dropdown-toggle::after {
     display: none;
+}
+
+/* main */
+/* sidebar */
+
+main .sidebar {
+    width: 150px;
+    background-color: #051e34;
+    background-image: url(../img/sidebar-bg.png);
+    background-position-y: -2%;
+    margin-top: 70px;
+    height: calc(100vh - 70px);
+    padding: 35px 24px;
+}
+
+main .sidebar li {
+    padding-bottom: 22px;
+}
+
+@media screen and (max-width:768px) {
+    main .sidebar {
+        width: fit-content;
+    }
 }
