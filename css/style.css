@@ -7,9 +7,6 @@
 
 header {
     height: 70px;
-    position: fixed;
-    left: 0;
-    right: 0;
     padding: 0 12px;
     z-index: 99;
 }
@@ -36,7 +33,6 @@ header .dropdown-toggle::after {
     display: none;
 }
 
-/* main */
 /* sidebar */
 
 main .sidebar {
@@ -44,17 +40,21 @@ main .sidebar {
     background-color: #051e34;
     background-image: url(../img/sidebar-bg.png);
     background-position-y: -2%;
-    margin-top: 70px;
     height: calc(100vh - 70px);
     padding: 35px 24px;
 }
 
 main .sidebar li {
-    padding-bottom: 22px;
+    margin-bottom: 22px;
+}
+
+main .sidebar li:hover,
+main .sidebar div.mt-auto:hover {
+    background-color: rgba(211, 211, 211, 0.59);
+    cursor: pointer;
 }
 
 .dr-main-right {
-    margin-top: 70px;
     overflow-y: auto;
     height: calc(100vh - 70px);
 }
@@ -84,6 +84,8 @@ main .sidebar li {
 .dr-top-bar .col-12 {
     margin-bottom: 20px;
 }
+
+/* main bottom */
 
 main .dr-main-bottom table img {
     width: 30px;
